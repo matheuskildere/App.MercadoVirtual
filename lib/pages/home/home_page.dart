@@ -1,5 +1,14 @@
+import 'package:AppMercadoVirtual/components/buttons/rounded_button.dart';
+import 'package:AppMercadoVirtual/components/cards/offer_card.dart';
+import 'package:AppMercadoVirtual/components/cards/product_card.dart';
+import 'package:AppMercadoVirtual/pages/home/controller/home_controller.dart';
+import 'package:AppMercadoVirtual/pages/init/init_page.dart';
+import 'package:AppMercadoVirtual/pages/settings/settings_page.dart';
+import 'package:AppMercadoVirtual/shared/models/product_model.dart';
 import 'package:AppMercadoVirtual/shared/theme/color.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -7,6 +16,15 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  HomeController _controller = HomeController();
+  List<Widget> pagesList =[
+    InitPage(),
+    buildBuilder(),
+    buildQRCode(),
+    buildNotification(),
+    SettingsPage()
+  ];
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +34,11 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             Row(
               children: <Widget>[
-                Icon(Icons.access_alarms),
+                Image.asset(
+                  "assets/logo/logoML.png",
+                  height: 30,
+                  width: 50,
+                ),
                 SizedBox(width: 10,),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -30,13 +52,13 @@ class _HomePageState extends State<HomePage> {
             Row(
               children: <Widget>[
                 IconButton(
-                  icon: Icon(Icons.shopping_cart, color: Colors.white, size: 20,), 
+                  icon: Icon(FontAwesomeIcons.shoppingCart, color: Colors.white, size: 15,), 
                   onPressed: (){}
                 ),
                 SizedBox(width: 15,),
                 ClipOval(
-                  child: Image.network(
-                    "https://us.123rf.com/450wm/olgaosa/olgaosa1802/olgaosa180200076/94905731-o-modelo-bonito-da-senhora-da-mulher-veste-o-chap%C3%A9u-negro-%C3%A0-moda-elegante-blusa-de-seda-transparente-bra.jpg?ver=6",
+                  child: Image.asset(
+                    "assets/profile.png",
                     width: 30,
                     height: 30,
                     fit: BoxFit.cover,
@@ -49,12 +71,53 @@ class _HomePageState extends State<HomePage> {
       ),
       backgroundColor: colorBackground,
       body: SingleChildScrollView(
-        child: Column(
-          children: <Widget>[
-
+        child: Observer(builder: (context) => pagesList[_controller.selectedIndex],)
+      ),
+      bottomNavigationBar: Observer(
+        builder:(context)=> BottomNavigationBar(
+          items: <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(FontAwesomeIcons.home, color: Theme.of(context).iconTheme.color,),
+              title: Text("Início", style: Theme.of(context).textTheme.bodyText1,)
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(FontAwesomeIcons.shapes, color: Theme.of(context).iconTheme.color,),
+              title: Text("Builder", style: Theme.of(context).textTheme.bodyText1,)
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(FontAwesomeIcons.qrcode, color: Theme.of(context).iconTheme.color,),
+              title: Text("QR Code", style: Theme.of(context).textTheme.bodyText1,)
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(FontAwesomeIcons.bell, color: Theme.of(context).iconTheme.color,),
+              title: Text("Notificações", style: Theme.of(context).textTheme.bodyText1,)
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(FontAwesomeIcons.bars, color: Theme.of(context).iconTheme.color,),
+              title: Text("Mais", style: Theme.of(context).textTheme.bodyText1,)
+            ),
           ],
+          selectedFontSize: 20,
+          unselectedFontSize: 15,
+          iconSize: 20,
+          showSelectedLabels: true,
+          showUnselectedLabels: true,
+          currentIndex: _controller.selectedIndex,
+          selectedItemColor: colorTheme,
+          onTap: (value) => _controller.onChangeSelectedIndex(value),
         ),
       ),
     );
+  }
+  static Widget buildBuilder(){
+    return Text("BUILDER");
+  }
+
+  static Widget buildQRCode(){
+    return Text("QRCODE");
+  }
+
+  static Widget buildNotification(){
+    return Text("NOTIFICATION");
   }
 }
