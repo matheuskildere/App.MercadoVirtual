@@ -302,6 +302,12 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "provider",
+      "rootUri": "file:///home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/provider-3.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "pub_semver",
       "rootUri": "file:///home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/pub_semver-1.4.4",
       "packageUri": "lib/",
@@ -434,7 +440,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2020-07-04T16:47:19.678393Z",
+  "generated": "2020-07-04T22:06:54.823367Z",
   "generator": "pub",
   "generatorVersion": "2.8.0-dev.17.0.flutter-1402e8e1a4"
 }

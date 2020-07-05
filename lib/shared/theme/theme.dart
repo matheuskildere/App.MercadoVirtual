@@ -8,7 +8,7 @@ ThemeData themeData = ThemeData(
   ),
   buttonTheme: ButtonThemeData(
     buttonColor: colorTheme, 
-    minWidth: 135
+    minWidth: 135,
   ),
   fontFamily: 'ProximaNova',
   textTheme: TextTheme(
@@ -19,6 +19,9 @@ ThemeData themeData = ThemeData(
     headline5: TextStyle(fontSize: 18, color: colorGreyText),
     headline6: TextStyle(fontSize: 15, color: colorGreyText2),
     // Title icons NavigationBar
-    bodyText1: TextStyle(fontSize: 13, color: colorTheme)
+    bodyText1: TextStyle(fontSize: 13, color: colorTheme),
+    // Text profile settings
+    bodyText2: TextStyle(fontSize: 16, color: colorBlackBodyText2),
+    subtitle1: TextStyle(fontSize: 19, color: colorBlackBodyText2),
   )
 );

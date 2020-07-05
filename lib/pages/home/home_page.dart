@@ -1,14 +1,10 @@
-import 'package:AppMercadoVirtual/components/buttons/rounded_button.dart';
-import 'package:AppMercadoVirtual/components/cards/offer_card.dart';
-import 'package:AppMercadoVirtual/components/cards/product_card.dart';
+
 import 'package:AppMercadoVirtual/pages/home/controller/home_controller.dart';
-import 'package:AppMercadoVirtual/pages/init/init_page.dart';
-import 'package:AppMercadoVirtual/pages/settings/settings_page.dart';
-import 'package:AppMercadoVirtual/shared/models/product_model.dart';
 import 'package:AppMercadoVirtual/shared/theme/color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -16,17 +12,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  HomeController _controller = HomeController();
-  List<Widget> pagesList =[
-    InitPage(),
-    buildBuilder(),
-    buildQRCode(),
-    buildNotification(),
-    SettingsPage()
-  ];
   
   @override
   Widget build(BuildContext context) {
+    HomeController _controller = Provider.of<HomeController>(context);
     return Scaffold(
       appBar: AppBar(
         title: Row(
@@ -70,9 +59,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       backgroundColor: colorBackground,
-      body: SingleChildScrollView(
-        child: Observer(builder: (context) => pagesList[_controller.selectedIndex],)
-      ),
+      body: Observer(builder: (context) => _controller.pagesList[_controller.selectedIndex],),
       bottomNavigationBar: Observer(
         builder:(context)=> BottomNavigationBar(
           items: <BottomNavigationBarItem>[
@@ -89,7 +76,7 @@ class _HomePageState extends State<HomePage> {
               title: Text("QR Code", style: Theme.of(context).textTheme.bodyText1,)
             ),
             BottomNavigationBarItem(
-              icon: Icon(FontAwesomeIcons.bell, color: Theme.of(context).iconTheme.color,),
+              icon: Icon(FontAwesomeIcons.solidBell, color: Theme.of(context).iconTheme.color,),
               title: Text("Notificações", style: Theme.of(context).textTheme.bodyText1,)
             ),
             BottomNavigationBarItem(
@@ -108,16 +95,5 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
     );
-  }
-  static Widget buildBuilder(){
-    return Text("BUILDER");
-  }
-
-  static Widget buildQRCode(){
-    return Text("QRCODE");
-  }
-
-  static Widget buildNotification(){
-    return Text("NOTIFICATION");
   }
 }
