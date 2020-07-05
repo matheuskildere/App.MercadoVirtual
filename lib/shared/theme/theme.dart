@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'color.dart';
 
 ThemeData themeData = ThemeData(
+  primaryColor: colorTheme,
   appBarTheme: AppBarTheme(
     color: colorTheme,
   ),
@@ -11,6 +12,7 @@ ThemeData themeData = ThemeData(
     minWidth: 135,
   ),
   fontFamily: 'ProximaNova',
+
   textTheme: TextTheme(
     headline1: TextStyle(fontSize: 15, color: Colors.white),
     headline2: TextStyle(fontSize: 10, color: Colors.white),

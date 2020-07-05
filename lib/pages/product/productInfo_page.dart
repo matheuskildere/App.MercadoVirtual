@@ -1,6 +1,8 @@
 import 'package:AppMercadoVirtual/components/cards/question_cart.dart';
+import 'package:AppMercadoVirtual/pages/product/controller/productInfo_controller.dart';
 import 'package:AppMercadoVirtual/shared/theme/color.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ProductInfoPage extends StatefulWidget {
@@ -9,9 +11,17 @@ class ProductInfoPage extends StatefulWidget {
 }
 
 class _ProductInfoPageState extends State<ProductInfoPage> {
+  ProductInfoController _controller = ProductInfoController();
+  
   @override
   Widget build(BuildContext context) {
+    List<Widget> buttonsList =[
+      buttonInfo(),
+      buttonDesc(),
+      buttonQuestion()
+    ];
     var size = MediaQuery.of(context).size;
+
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
@@ -97,44 +107,48 @@ class _ProductInfoPageState extends State<ProductInfoPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      ButtonTheme(
-                        minWidth: 60,
-                        height: 40,
-                        buttonColor: Colors.white,
-                        child: RaisedButton(
-                          onPressed: (){},
-                          shape: CircleBorder(),
-                          child: Icon(FontAwesomeIcons.info, size: 14, color: colorTheme,),
+                  Observer(
+                    builder: (context)=> Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        ButtonTheme(
+                          minWidth: 60,
+                          height: 40,
+                          buttonColor: _controller.colorIconInfo,
+                          child: RaisedButton(
+                            onPressed: ()=> _controller.onTapInfo(),
+                            shape: CircleBorder(),
+                            child: Icon(FontAwesomeIcons.info, size: 14, color: colorTheme,),
+                          ),
                         ),
-                      ),
-                      ButtonTheme(
-                        minWidth: 60,
-                        height: 40,
-                        buttonColor: Color(0xFFAAAAAA),
-                        child: RaisedButton(
-                          onPressed: (){},
-                          shape: CircleBorder(),
-                          child: Icon(FontAwesomeIcons.alignLeft, size: 14, color: colorTheme,),
+                        ButtonTheme(
+                          minWidth: 60,
+                          height: 40,
+                          buttonColor: _controller.colorIconDesc,
+                          child: RaisedButton(
+                            onPressed: ()=> _controller.onTapDesc(),
+                            shape: CircleBorder(),
+                            child: Icon(FontAwesomeIcons.alignLeft, size: 14, color: colorTheme,),
+                          ),
                         ),
-                      ),
-                      ButtonTheme(
-                        minWidth: 60,
-                        height: 40,
-                        buttonColor: Colors.white,
-                        child: RaisedButton(
-                          onPressed: (){},
-                          shape: CircleBorder(),
-                          child: Icon(FontAwesomeIcons.question, size: 14, color: colorTheme,),
+                        ButtonTheme(
+                          minWidth: 60,
+                          height: 40,
+                          buttonColor: _controller.colorIconQuest,
+                          child: RaisedButton(
+                            onPressed: ()=> _controller.onTapQuest(),
+                            shape: CircleBorder(),
+                            child: Icon(FontAwesomeIcons.question, size: 14, color: colorTheme,),
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-
-                  buttonDesc(),
+                  
+                  Observer(
+                    builder: (context) => buttonsList[_controller.selectedIcon],
+                  ),
                   
                   Row(
                     children: <Widget>[

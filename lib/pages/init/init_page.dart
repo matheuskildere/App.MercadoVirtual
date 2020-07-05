@@ -1,9 +1,11 @@
 import 'package:AppMercadoVirtual/components/buttons/rounded_button.dart';
 import 'package:AppMercadoVirtual/components/cards/offer_card.dart';
 import 'package:AppMercadoVirtual/components/cards/product_card.dart';
+import 'package:AppMercadoVirtual/pages/home/controller/home_controller.dart';
 import 'package:AppMercadoVirtual/shared/models/product_model.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:provider/provider.dart';
 
 class InitPage extends StatefulWidget {
   @override
@@ -13,6 +15,7 @@ class InitPage extends StatefulWidget {
 class _InitPageState extends State<InitPage> {
   @override
   Widget build(BuildContext context) {
+    HomeController _homeController = Provider.of<HomeController>(context);
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
@@ -81,6 +84,7 @@ class _InitPageState extends State<InitPage> {
                   RoundedButton(
                     icon: FontAwesomeIcons.ellipsisH,
                     name: "Outros",
+                    onTap: ()=> _homeController.panelController.open()
                   ),
                 ],
               ),
@@ -126,4 +130,5 @@ class _InitPageState extends State<InitPage> {
       ),
     );
   }
+  
 }
