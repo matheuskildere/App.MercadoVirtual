@@ -1,0 +1,25 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="me.hetian.flutter_qr_reader" >
+4
+5    <uses-sdk android:minSdkVersion="16" />
+5-->/home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_qr_reader-1.0.3/android/src/main/AndroidManifest.xml
+6
+7    <uses-permission android:name="android.permission.FLASHLIGHT" />
+7-->/home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_qr_reader-1.0.3/android/src/main/AndroidManifest.xml:3:5-69
+7-->/home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_qr_reader-1.0.3/android/src/main/AndroidManifest.xml:3:22-66
+8    <uses-permission android:name="android.permission.CAMERA" />
+8-->/home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_qr_reader-1.0.3/android/src/main/AndroidManifest.xml:4:5-65
+8-->/home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_qr_reader-1.0.3/android/src/main/AndroidManifest.xml:4:22-62
+9
+10    <uses-feature android:name="android.hardware.camera" />
+10-->/home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_qr_reader-1.0.3/android/src/main/AndroidManifest.xml:5:5-60
+10-->/home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_qr_reader-1.0.3/android/src/main/AndroidManifest.xml:5:19-57
+11    <uses-feature android:name="android.hardware.camera.autofocus" />
+11-->/home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_qr_reader-1.0.3/android/src/main/AndroidManifest.xml:6:5-70
+11-->/home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_qr_reader-1.0.3/android/src/main/AndroidManifest.xml:6:19-67
+12    <uses-feature android:name="android.hardware.camera.flash" />
+12-->/home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_qr_reader-1.0.3/android/src/main/AndroidManifest.xml:7:5-66
+12-->/home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_qr_reader-1.0.3/android/src/main/AndroidManifest.xml:7:19-63
+13
+14</manifest>
