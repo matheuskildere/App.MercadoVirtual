@@ -7,7 +7,11 @@ class RoundedButton extends StatelessWidget {
   final double iconSize;
   final double size;
 
+<<<<<<< HEAD
   RoundedButton({@required this.name,@required this.icon, this.onTap, this.iconSize, this.size});
+=======
+  RoundedButton({@required this.name,@required this.icon,@required this.onTap, this.iconSize, this.size});
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
 
   @override
   Widget build(BuildContext context) {

@@ -158,6 +158,7 @@
       "languageVersion": "2.7"
     },
     {
+<<<<<<< HEAD
       "name": "flutter_plugin_android_lifecycle",
       "rootUri": "file:///home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.8",
       "packageUri": "lib/",
@@ -170,18 +171,23 @@
       "languageVersion": "2.2"
     },
     {
+=======
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
       "name": "flutter_test",
       "rootUri": "file:///home/matheus/development/flutter/packages/flutter_test",
       "packageUri": "lib/",
       "languageVersion": "2.2"
     },
     {
+<<<<<<< HEAD
       "name": "flutter_unity_widget",
       "rootUri": "file:///home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_unity_widget-0.1.6+8",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
     {
+=======
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
       "name": "font_awesome_flutter",
       "rootUri": "file:///home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/font_awesome_flutter-8.8.1",
       "packageUri": "lib/",
@@ -206,12 +212,15 @@
       "languageVersion": "2.3"
     },
     {
+<<<<<<< HEAD
       "name": "http",
       "rootUri": "file:///home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.12.1",
       "packageUri": "lib/",
       "languageVersion": "2.4"
     },
     {
+=======
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
       "name": "http_multi_server",
       "rootUri": "file:///home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/http_multi_server-2.2.0",
       "packageUri": "lib/",
@@ -230,6 +239,7 @@
       "languageVersion": "2.0"
     },
     {
+<<<<<<< HEAD
       "name": "image_picker",
       "rootUri": "file:///home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.6.7+3",
       "packageUri": "lib/",
@@ -242,6 +252,8 @@
       "languageVersion": "2.5"
     },
     {
+=======
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
       "name": "io",
       "rootUri": "file:///home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/io-0.3.4",
       "packageUri": "lib/",
@@ -260,12 +272,15 @@
       "languageVersion": "2.6"
     },
     {
+<<<<<<< HEAD
       "name": "lite_rolling_switch",
       "rootUri": "file:///home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/lite_rolling_switch-0.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
     {
+=======
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
       "name": "logging",
       "rootUri": "file:///home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/logging-0.11.4",
       "packageUri": "lib/",
@@ -332,6 +347,7 @@
       "languageVersion": "2.1"
     },
     {
+<<<<<<< HEAD
       "name": "permission_handler",
       "rootUri": "file:///home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-5.0.1+1",
       "packageUri": "lib/",
@@ -344,18 +360,23 @@
       "languageVersion": "2.6"
     },
     {
+=======
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
       "name": "petitparser",
       "rootUri": "file:///home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/petitparser-2.4.0",
       "packageUri": "lib/",
       "languageVersion": "2.4"
     },
     {
+<<<<<<< HEAD
       "name": "plugin_platform_interface",
       "rootUri": "file:///home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-1.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
     {
+=======
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
       "name": "pool",
       "rootUri": "file:///home/matheus/development/flutter/.pub-cache/hosted/pub.dartlang.org/pool-1.4.0",
       "packageUri": "lib/",
@@ -506,7 +527,11 @@
       "languageVersion": "2.7"
     }
   ],
+<<<<<<< HEAD
   "generated": "2020-07-05T23:07:03.446722Z",
+=======
+  "generated": "2020-07-05T12:56:13.504211Z",
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
   "generator": "pub",
   "generatorVersion": "2.8.0-dev.17.0.flutter-1402e8e1a4"
 }

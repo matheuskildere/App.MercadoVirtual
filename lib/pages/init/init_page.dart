@@ -95,18 +95,30 @@ class _InitPageState extends State<InitPage> {
               children: <Widget>[
                 ProductCard(
                   productModel: ProductModel(
+<<<<<<< HEAD
                     name: "TV 14\"",
                     value: 1400.00,
                     urlLink: "assets/products/tv2.png",
+=======
+                    name: "Sofá Ferrari",
+                    value: 600.00,
+                    urlLink: "assets/products/couch.png",
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
                   ),
                   onTap:() => Navigator.pushNamed(context, 'productInfo')
                   ,
                 ),
                 ProductCard(
                   productModel: ProductModel(
+<<<<<<< HEAD
                     name: "Sofá Ferrari",
                     value: 500.00,
                     urlLink: "assets/products/couch.png"
+=======
+                    name: "Livro Atuiti",
+                    value: 153.00,
+                    urlLink: "assets/products/book.png"
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
                   ),
                 ),
                 ProductCard(
@@ -118,8 +130,13 @@ class _InitPageState extends State<InitPage> {
                 ),
                 ProductCard(
                   productModel: ProductModel(
+<<<<<<< HEAD
                     name: "MegaPhone 7 Preto",
                     value: 5200.00,
+=======
+                    name: "Iphone 7 Preto",
+                    value: 5000.00,
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
                     urlLink: "assets/products/iphone.png"
                   ),
                 ),

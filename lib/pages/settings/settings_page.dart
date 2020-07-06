@@ -48,11 +48,19 @@ class _SettingsPageState extends State<SettingsPage> {
                   children: <Widget>[
                     Text(
                       "Olá Daiana,",
+<<<<<<< HEAD
                       style: TextStyle(fontSize: 16, color: colorBlackBodyText2),
                     ),
                     Text(
                       "Nível 32 - Mercado Pontos",
                       style: TextStyle(fontSize: 17, color: colorBlackBodyText2),
+=======
+                      style: Theme.of(context).textTheme.bodyText2,
+                    ),
+                    Text(
+                      "Nível 32 - Mercado Pontos",
+                      style: Theme.of(context).textTheme.subtitle1,
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
                     )
                   ],
                 ),

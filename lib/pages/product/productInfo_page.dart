@@ -79,8 +79,13 @@ class _ProductInfoPageState extends State<ProductInfoPage> {
               SizedBox(height: 30,),
               Center(
                 child: Image.asset(
+<<<<<<< HEAD
                   'assets/products/tv2.png',
                   width: size.width/1.5,
+=======
+                  'assets/products/SOFA.png',
+                  width: size.width/1.2,
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
                 ),
               ),
               Center(
@@ -186,7 +191,11 @@ class _ProductInfoPageState extends State<ProductInfoPage> {
                                 Text("AR", style: TextStyle(color: Colors.white, fontSize: 18),)
                               ],
                             ),
+<<<<<<< HEAD
                             onPressed: ()=> Navigator.pushNamed(context, 'camAR')
+=======
+                            onPressed: (){}
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
                           ),
                         ),
                       ),
@@ -211,12 +220,21 @@ class _ProductInfoPageState extends State<ProductInfoPage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
+<<<<<<< HEAD
                 Text("TV 14\"",style: TextStyle(fontSize: 25, color: colorGreyText2),),
                 Text("R\$ 1400,00",style: TextStyle(fontSize: 25, color: colorGreyText2),)
               ],
             ),
             SizedBox(height: 5,),
             Text("Eletrônicos", style: TextStyle(fontSize: 15, color: colorGreyText),),
+=======
+                Text("Sofá Ferrari",style: TextStyle(fontSize: 25, color: colorGreyText2),),
+                Text("R\$ 600,00",style: TextStyle(fontSize: 25, color: colorGreyText2),)
+              ],
+            ),
+            SizedBox(height: 5,),
+            Text("Móveis", style: TextStyle(fontSize: 15, color: colorGreyText),),
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
           ],
         ),
         SizedBox(height: 20,),
@@ -254,7 +272,11 @@ class _ProductInfoPageState extends State<ProductInfoPage> {
         Align(alignment: Alignment.centerLeft,child: Text("Descrição do produto",style: TextStyle(fontSize: 20, color: Color(0xFF333333)),)),
         SizedBox(height: 10,),
         Text(
+<<<<<<< HEAD
           "TV de ótima para assistir seus jogos, filmes e séries!",
+=======
+          "Com muito conforto e bom gosto, o sofá Ferrari oferece o melhor dos mundo, bem na sua sala!",
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
           style: Theme.of(context).textTheme.headline6,
         ),
         
@@ -268,10 +290,18 @@ class _ProductInfoPageState extends State<ProductInfoPage> {
         Align(alignment: Alignment.centerLeft,child: Text("Descrição do produto",style: TextStyle(fontSize: 20, color: Color(0xFF333333)),)),
         SizedBox(height: 10,),
         Text(
+<<<<<<< HEAD
           "TV de ótima para assistir seus jogos, filmes e séries!"
             " Já pensou em ter uma dessa em casa?!\n\n"
             "Utlize o modeo AR para visualiza-la na sua casa!"
             " Você vai se apaixonar!!",
+=======
+          "Com muito conforto e bom gosto, o sofá Ferrari"
+            "oferece o melhor dos mundo, bem na sua sala!\n\n"
+            "Com muito conforto e bom gosto, o sofá Ferrari oferece o melhor dos mundo, bem na sua sala!"
+            "Com muito conforto e bom gosto, o sofá Ferrari oferece o melhor dos mundo, bem na sua sala!"
+            "Com muito conforto e bom gosto, o sofá Ferrari oferece o melhor dos mundo, bem na sua sala!",
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
           style: Theme.of(context).textTheme.headline6,
           textAlign: TextAlign.justify,
         ),

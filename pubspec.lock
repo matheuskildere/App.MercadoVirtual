@@ -181,6 +181,7 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.0+1"
+<<<<<<< HEAD
   flutter_plugin_android_lifecycle:
     dependency: transitive
     description:
@@ -195,11 +196,14 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.3"
+=======
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
   flutter_test:
     dependency: "direct dev"
     description: flutter
     source: sdk
     version: "0.0.0"
+<<<<<<< HEAD
   flutter_unity_widget:
     dependency: "direct main"
     description:
@@ -207,6 +211,8 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.6+8"
+=======
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
   font_awesome_flutter:
     dependency: "direct main"
     description:
@@ -235,6 +241,7 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.14.0+3"
+<<<<<<< HEAD
   http:
     dependency: transitive
     description:
@@ -242,6 +249,8 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.12.1"
+=======
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
   http_multi_server:
     dependency: transitive
     description:
@@ -263,6 +272,7 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.4"
+<<<<<<< HEAD
   image_picker:
     dependency: transitive
     description:
@@ -277,6 +287,8 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.0"
+=======
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
   io:
     dependency: transitive
     description:
@@ -298,6 +310,7 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.1"
+<<<<<<< HEAD
   lite_rolling_switch:
     dependency: "direct main"
     description:
@@ -305,6 +318,8 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.1"
+=======
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
   logging:
     dependency: transitive
     description:
@@ -382,6 +397,7 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.9.0"
+<<<<<<< HEAD
   permission_handler:
     dependency: "direct main"
     description:
@@ -396,6 +412,8 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.1"
+=======
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
   petitparser:
     dependency: transitive
     description:
@@ -403,6 +421,7 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.4.0"
+<<<<<<< HEAD
   plugin_platform_interface:
     dependency: transitive
     description:
@@ -410,6 +429,8 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.2"
+=======
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
   pool:
     dependency: transitive
     description:

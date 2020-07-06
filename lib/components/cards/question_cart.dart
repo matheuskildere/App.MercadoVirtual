@@ -22,7 +22,11 @@ class QuestionCard extends StatelessWidget {
       ),
       child: ListTile(
         contentPadding: EdgeInsets.only(top: 7,right: 15, left: 15, bottom: 7),
+<<<<<<< HEAD
         title: Text("Olá, quais as dimensões deste TV?",style: Theme.of(context).textTheme.bodyText2,),
+=======
+        title: Text("Olá, quais as dimensões deste sofá?",style: Theme.of(context).textTheme.bodyText2,),
+>>>>>>> 9b90f8f105b005c097dea6490ffc2006c721a92c
         subtitle: Padding(
           padding: const EdgeInsets.only(top:15.0),
           child: Row(
