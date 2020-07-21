@@ -1,5 +1,4 @@
-[](https://github.com/jefferson-calmon/project/blob/master/images-readme/Mercado_AR.png)
-
+<center><img src="https://github.com/matheuskildere/App.MercadoVirtual/blob/master/assets/Mercado_AR.png"></center>
 <p align="center">
 <a href="#about">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#tech">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -12,9 +11,11 @@
 
 ## :book: Sobre o projeto
 
-O Mercado AR é uma opção para aqueles que querem comprar pela internet, mas tem medo de não chegar exatamente aquilo que comprou.
+Este projeto foi desenvolvido no Hackthon 3.0 da Shawee, nossas solução para o Mercado Livre envolve um projeto que utiliza Realidade Aumentada.
 
-Com o Mercado AR as pessoas poderão ver os seus produtos em sua casa direto pela tela do seu celular, e o melhor, sem nem mesmo comprar-lo.
+O Mercado AR é uma opção para aqueles que querem comprar pela internet mas possuem um certo medo de não chegar exatamente aquilo que comprou.
+
+Com o Mercado AR você irá conseguir ver os seus produtos em sua casa direto pela tela do seu celular, e o melhor, sem nem mesmo comprar-lo.
 
 Veja uma página de exemplo clicando [aqui](https://mercado-ar.netlify.app/)
 
